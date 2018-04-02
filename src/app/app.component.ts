@@ -6,12 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'cognizant';
+  title = 'Cognizant Technology Solutions';
   name='Sanjay';
   num1=10;
   num2=20;
-
   displayDate=function(){
    return new Date();
+  }
+  totalNumbers=function(){
+   
   }
 }

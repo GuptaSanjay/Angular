@@ -1,15 +1,23 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<body style="background-color:brown">
 <div style="text-align:center">
   <div id="heading">
   <h1>
-    <marquee>Welcome to {{ title | uppercase}}!
+    <marquee>Welcome to {{ title}}!
       </marquee></h1>
+    </div>
   <h3>{{name |uppercase}}</h3>
   <h5>Number addition</h5>
-</div>
+
   {{num1+num2|currency:'INR'}}
   <h5>Current Date is</h5>
   {{displayDate()}} 
+  <div><app-app1component></app-app1component></div>
+    Shop:
+    <a routerLink="/catalog">Catalog</a>
+    <a routerLink="/products">Products</a>
+    <a routerLink="/todo">Task</a>
+    <a routerLink="/remote">Remotecall</a>
+    
+    <router-outlet></router-outlet>
   </div>
-</body>
+
